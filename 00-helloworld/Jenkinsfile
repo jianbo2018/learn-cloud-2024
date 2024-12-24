@@ -1,0 +1,52 @@
+pipeline {
+    agent any
+    environment{
+        DOCKER_IMAGE="jianbo.org.cn/learn/00-helloworld:v1.0-test"
+        DOCKER_REGISTRY="localhost:5000"
+        DEPLOY_SERVER="localhost"
+        DEPLOY_USER="jianbo"
+    }
+
+    stages{
+        stage('Checkout Code'){
+            git branch: 'main', url: 'git@github.com:jianbo2018/learn-cloud-2024.git'
+        }
+        stage('Docker build'){
+            steps{
+                sh 'docker build -t ${DOCKER_IMAGE} .'
+            }
+        }
+        stage('push docker image'){
+            steps{
+                //登录docker仓库并推送
+                sh 'docker login -u jianbo -p yrh$19890820 ${DOCKER_REGISTRY}'
+                sh 'docker push ${DOCKER_IMAGE}'
+            }
+        }
+
+       stage('Deploy to Server'){
+            steps{
+                // SSH 登录到服务器，拉取镜像并运行容器
+                sshagent(['jenkins-master']) {
+                    sh """
+                    ssh ${DEPLOY_USER}@${DEPLOY_SERVER} '
+                        docker pull ${DOCKER_IMAGE} &&
+                        docker stop 00-helloworld || true &&
+                        docker rm 00-helloworld || true &&
+                        docker run -d --name 00-helloworld -p 8888:8888 ${DOCKER_IMAGE}
+                    '
+                    """
+                }
+            }
+       }
+    }
+
+    post{
+        success{
+            echo 'Deployment complete successfully'
+        }
+        failure{
+            echo 'Deployment failed'
+        }
+    }
+}
