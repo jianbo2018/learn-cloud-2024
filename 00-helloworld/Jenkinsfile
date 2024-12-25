@@ -4,9 +4,9 @@ pipeline{
         maven 'local_maven'
     }
     environment{
-        DOCKER_IMAGE="jianbo.org.cn/learn/00-helloworld:v1.0-test"
-        DOCKER_REGISTRY="127.0.0.1:5000"
-        DEPLOY_SERVER="127.0.0.1"
+        DOCKER_IMAGE="localhost:5000/learn/00-helloworld:v1.0-test"
+        DOCKER_REGISTRY="localhost:5000"
+        DEPLOY_SERVER="localhost"
         DEPLOY_USER="jianbo"
     }
 
