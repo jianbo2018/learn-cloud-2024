@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8895999d-d4ed-4ad8-9e44-157d7c921d1c" name="Changes" comment="modify Jenkinsfile's credentialsId">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8895999d-d4ed-4ad8-9e44-157d7c921d1c" name="Changes" comment="modify Jenkinsfile's tools:maven 'local_maven'">
       <change beforePath="$PROJECT_DIR$/00-helloworld/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/00-helloworld/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1734984230622</updated>
-      <workItem from="1734984231806" duration="10274000" />
+      <workItem from="1734984231806" duration="10709000" />
     </task>
     <task id="LOCAL-00001" summary="initialize">
       <option name="closed" value="true" />
@@ -144,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735112625744</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="modify Jenkinsfile's tools:maven 'local_maven'">
+      <option name="closed" value="true" />
+      <created>1735115501368</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735115501368</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +173,7 @@
     <MESSAGE value="dockerfile,jenkinsfile added" />
     <MESSAGE value="modify jenkinsfile: append maven build step:2" />
     <MESSAGE value="modify Jenkinsfile's credentialsId" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify Jenkinsfile's credentialsId" />
+    <MESSAGE value="modify Jenkinsfile's tools:maven 'local_maven'" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify Jenkinsfile's tools:maven 'local_maven'" />
   </component>
 </project>
