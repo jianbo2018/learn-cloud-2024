@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8895999d-d4ed-4ad8-9e44-157d7c921d1c" name="Changes" comment="modify Jenkinsfile: docker镜像名称第一部分从域名改为ip+port">
+    <list default="true" id="8895999d-d4ed-4ad8-9e44-157d7c921d1c" name="Changes" comment="modify Jenkinsfile: -o StrictHostKeyChecking=no，禁用主机密钥验证从而尝试让jenkins在其known_host中没有目标主机ip时也可以正常操作">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00-helloworld/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/00-helloworld/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1734984230622</updated>
       <workItem from="1734984231806" duration="12465000" />
-      <workItem from="1735119329673" duration="1709000" />
+      <workItem from="1735119329673" duration="2294000" />
     </task>
     <task id="LOCAL-00001" summary="initialize">
       <option name="closed" value="true" />
@@ -192,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735119370478</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="modify Jenkinsfile: -o StrictHostKeyChecking=no，禁用主机密钥验证从而尝试让jenkins在其known_host中没有目标主机ip时也可以正常操作">
+      <option name="closed" value="true" />
+      <created>1735121738115</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1735121738115</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +229,7 @@
     <MESSAGE value="modify Jenkinsfile: host ip" />
     <MESSAGE value="modify Jenkinsfile: host ip2" />
     <MESSAGE value="modify Jenkinsfile: docker镜像名称第一部分从域名改为ip+port" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify Jenkinsfile: docker镜像名称第一部分从域名改为ip+port" />
+    <MESSAGE value="modify Jenkinsfile: -o StrictHostKeyChecking=no，禁用主机密钥验证从而尝试让jenkins在其known_host中没有目标主机ip时也可以正常操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify Jenkinsfile: -o StrictHostKeyChecking=no，禁用主机密钥验证从而尝试让jenkins在其known_host中没有目标主机ip时也可以正常操作" />
   </component>
 </project>
