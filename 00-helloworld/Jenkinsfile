@@ -26,7 +26,9 @@ pipeline{
         }
         stage('Docker build'){
             steps{
-                sh 'docker build -t ${DOCKER_IMAGE} .'
+                dir('00-helloworld'){
+                    sh 'docker build -t ${DOCKER_IMAGE} .'
+                }
             }
         }
         stage('push docker image'){
