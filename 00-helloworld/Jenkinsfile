@@ -1,4 +1,4 @@
-pipeline {
+pipeline{
     agent any
     environment{
         DOCKER_IMAGE="jianbo.org.cn/learn/00-helloworld:v1.0-test"
@@ -9,7 +9,16 @@ pipeline {
 
     stages{
         stage('Checkout Code'){
-            git branch: 'main', url: 'git@github.com:jianbo2018/learn-cloud-2024.git'
+            steps{
+                git branch: 'master', url: 'git@github.com:jianbo2018/learn-cloud-2024.git'
+            }
+        }
+        stage('maven build'){
+            steps{
+                dir('00-helloworld'){
+                    sh 'mvn clean package -DskipTests'
+                }
+            }
         }
         stage('Docker build'){
             steps{
