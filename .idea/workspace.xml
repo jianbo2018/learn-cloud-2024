@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8895999d-d4ed-4ad8-9e44-157d7c921d1c" name="Changes" comment="dockerfile,jenkinsfile added">
+    <list default="true" id="8895999d-d4ed-4ad8-9e44-157d7c921d1c" name="Changes" comment="modify Jenkinsfile's credentialsId">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/00-helloworld/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/00-helloworld/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1734984230622</updated>
-      <workItem from="1734984231806" duration="8801000" />
+      <workItem from="1734984231806" duration="10274000" />
     </task>
     <task id="LOCAL-00001" summary="initialize">
       <option name="closed" value="true" />
@@ -127,7 +128,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735070953443</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="modify jenkinsfile: append maven build step:2">
+      <option name="closed" value="true" />
+      <created>1735112077148</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735112077148</updated>
+    </task>
+    <task id="LOCAL-00005" summary="modify Jenkinsfile's credentialsId">
+      <option name="closed" value="true" />
+      <created>1735112625744</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735112625744</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +164,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialize" />
     <MESSAGE value="dockerfile,jenkinsfile added" />
-    <option name="LAST_COMMIT_MESSAGE" value="dockerfile,jenkinsfile added" />
+    <MESSAGE value="modify jenkinsfile: append maven build step:2" />
+    <MESSAGE value="modify Jenkinsfile's credentialsId" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify Jenkinsfile's credentialsId" />
   </component>
 </project>

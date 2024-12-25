@@ -1,5 +1,8 @@
 pipeline{
     agent any
+    tools{
+        maven 'local_maven'
+    }
     environment{
         DOCKER_IMAGE="jianbo.org.cn/learn/00-helloworld:v1.0-test"
         DOCKER_REGISTRY="localhost:5000"
