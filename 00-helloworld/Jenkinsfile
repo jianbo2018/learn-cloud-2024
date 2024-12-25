@@ -44,7 +44,7 @@ pipeline{
                 // SSH 登录到服务器，拉取镜像并运行容器
                 sshagent(['jenkins-master']) {
                     sh """
-                    ssh ${DEPLOY_USER}@${DEPLOY_SERVER} '
+                    ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_SERVER} '
                         docker pull ${DOCKER_IMAGE} &&
                         docker stop 00-helloworld || true &&
                         docker rm 00-helloworld || true &&
