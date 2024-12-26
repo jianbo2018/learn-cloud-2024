@@ -7,4 +7,4 @@ WORKDIR /app
 
 COPY target/lb-search-engine.jar ./
 
-ENTRYPOINT ["java","-jar","/app/lb-search-engine.jar","-Dspring.profiles.active=qa"]
+ENTRYPOINT ["java","-Dspring.profiles.active=qa","-jar","/app/lb-search-engine.jar"]

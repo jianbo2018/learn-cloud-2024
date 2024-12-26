@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8895999d-d4ed-4ad8-9e44-157d7c921d1c" name="Changes" comment="modify pom.xml：为子maven添加spring-boot-maven-plugin，从而使得在子maven下通过mvn构建的jar包也拥有main class的metadata">
-      <change afterPath="$PROJECT_DIR$/01-openapi-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-openapi-gateway/src/main/java/com/fan/learn/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-openapi-gateway/src/test/java/com/fan/learn/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-lb-search-engine/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-lb-search-engine/Jenkinsfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-lb-search-engine/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-lb-search-engine/src/main/java/com/fan/learn/sir/SearchEngineApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-lb-search-engine/src/main/java/com/fan/learn/sir/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-lb-search-engine/src/main/resources/application-dev.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-lb-search-engine/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="8895999d-d4ed-4ad8-9e44-157d7c921d1c" name="Changes" comment="add lb-search-engine: new project and basic config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +51,7 @@
     "Spring Boot.SearchEngineApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/jianbo/workspace/javawork/learn-cloud-2024/02-lb-search-engine/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,6 +64,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/02-lb-search-engine/src/main/resources" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
@@ -133,7 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1734984230622</updated>
       <workItem from="1734984231806" duration="12465000" />
-      <workItem from="1735119329673" duration="8274000" />
+      <workItem from="1735119329673" duration="9035000" />
     </task>
     <task id="LOCAL-00001" summary="initialize">
       <option name="closed" value="true" />
@@ -247,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735122867650</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add lb-search-engine: new project and basic config">
+      <option name="closed" value="true" />
+      <created>1735199975648</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1735199975648</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +279,7 @@
     <MESSAGE value="modify Jenkinsfile: -o StrictHostKeyChecking=no，禁用主机密钥验证从而尝试让jenkins在其known_host中没有目标主机ip时也可以正常操作" />
     <MESSAGE value="modify pom.xml：为子maven添加maven-compiler-plugin，从而使得在子maven下通过mvn构建的jar包也拥有main class的metadata" />
     <MESSAGE value="modify pom.xml：为子maven添加spring-boot-maven-plugin，从而使得在子maven下通过mvn构建的jar包也拥有main class的metadata" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify pom.xml：为子maven添加spring-boot-maven-plugin，从而使得在子maven下通过mvn构建的jar包也拥有main class的metadata" />
+    <MESSAGE value="add lb-search-engine: new project and basic config" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lb-search-engine: new project and basic config" />
   </component>
 </project>
