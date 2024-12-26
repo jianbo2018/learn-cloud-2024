@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8895999d-d4ed-4ad8-9e44-157d7c921d1c" name="Changes" comment="add lb-search-engine: new project and basic config">
+    <list default="true" id="8895999d-d4ed-4ad8-9e44-157d7c921d1c" name="Changes" comment="lb-search-engine: dockerfile modified">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-lb-search-engine/src/main/resources/application-qa.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/02-lb-search-engine/src/main/resources/application-qa.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -127,7 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1734984230622</updated>
       <workItem from="1734984231806" duration="12465000" />
-      <workItem from="1735119329673" duration="9035000" />
+      <workItem from="1735119329673" duration="9933000" />
     </task>
     <task id="LOCAL-00001" summary="initialize">
       <option name="closed" value="true" />
@@ -249,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735199975648</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="lb-search-engine: dockerfile modified">
+      <option name="closed" value="true" />
+      <created>1735200786820</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1735200786820</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +289,7 @@
     <MESSAGE value="modify pom.xml：为子maven添加maven-compiler-plugin，从而使得在子maven下通过mvn构建的jar包也拥有main class的metadata" />
     <MESSAGE value="modify pom.xml：为子maven添加spring-boot-maven-plugin，从而使得在子maven下通过mvn构建的jar包也拥有main class的metadata" />
     <MESSAGE value="add lb-search-engine: new project and basic config" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lb-search-engine: new project and basic config" />
+    <MESSAGE value="lb-search-engine: dockerfile modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="lb-search-engine: dockerfile modified" />
   </component>
 </project>

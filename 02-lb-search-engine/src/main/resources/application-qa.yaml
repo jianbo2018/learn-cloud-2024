@@ -1,6 +1,7 @@
 spring:
   cloud:
     nacos:
-      server-addr: localhost:8848
+#      qa环境docker0地址为172.17.0.1
+      server-addr: 172.17.0.1:8848
 server:
   port: 8889
