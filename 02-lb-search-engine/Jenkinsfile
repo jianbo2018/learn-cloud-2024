@@ -1,0 +1,67 @@
+pipeline{
+    agent any
+    tools{
+        maven 'local_maven'
+    }
+    environment{
+        DOCKER_IMAGE="localhost:5000/learn/02-lb-search-engine:v1.0-test"
+        DOCKER_REGISTRY="localhost:5000"
+        DEPLOY_SERVER="localhost"
+        DEPLOY_USER="jianbo"
+    }
+
+    stages{
+        stage('Checkout Code'){
+            steps{
+                git branch: 'master', url: 'git@github.com:jianbo2018/learn-cloud-2024.git',
+                credentialsId: 'jenkins-master'
+            }
+        }
+        stage('maven build'){
+            steps{
+                dir('02-lb-search-engine'){
+                    sh 'mvn clean package -DskipTests'
+                }
+            }
+        }
+        stage('Docker build'){
+            steps{
+                dir('02-lb-search-engine'){
+                    sh 'docker build -t ${DOCKER_IMAGE} .'
+                }
+            }
+        }
+        stage('push docker image'){
+            steps{
+                //登录docker仓库并推送
+                sh 'docker login -u ${DEPLOY_USER} -p yrh$19890820 ${DOCKER_REGISTRY}'
+                sh 'docker push ${DOCKER_IMAGE}'
+            }
+        }
+
+       stage('Deploy to Server'){
+            steps{
+                // SSH 登录到服务器，拉取镜像并运行容器
+                sshagent(['jenkins-master']) {
+                    sh """
+                    ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_SERVER} '
+                        docker pull ${DOCKER_IMAGE} &&
+                        docker stop lb-search-engine || true &&
+                        docker rm lb-search-engine || true &&
+                        docker run -d --name lb-search-engine -p 8889:8889 ${DOCKER_IMAGE}
+                    '
+                    """
+                }
+            }
+       }
+    }
+
+    post{
+        success{
+            echo 'Deployment complete successfully'
+        }
+        failure{
+            echo 'Deployment failed'
+        }
+    }
+}

@@ -11,12 +11,15 @@
     <url>http://maven.apache.org</url>
     <modules>
         <module>00-helloworld</module>
+        <module>01-openapi-gateway</module>
+        <module>02-lb-search-engine</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.boot>3.2.7</spring.boot>
         <spring.cloud>2023.0.3</spring.cloud>
+        <alibaba.cloud>2023.0.3.1</alibaba.cloud>
     </properties>
 
     <dependencyManagement>
@@ -34,6 +37,13 @@
                 <version>${spring.boot}</version>
                 <scope>import</scope>
                 <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${alibaba.cloud}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
