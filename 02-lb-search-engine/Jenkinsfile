@@ -48,7 +48,7 @@ pipeline{
                         docker pull ${DOCKER_IMAGE} &&
                         docker stop lb-search-engine || true &&
                         docker rm lb-search-engine || true &&
-                        docker run -d --name lb-search-engine -p 8889:8889 ${DOCKER_IMAGE}
+                        docker run -d --name lb-search-engine -P ${DOCKER_IMAGE}
                     '
                     """
                 }

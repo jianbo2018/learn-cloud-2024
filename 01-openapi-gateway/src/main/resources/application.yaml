@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: lb-openapi
+  profiles:
+    active: dev
+  cloud:
+    gateway:
+      routes:
+        - id: lb-search-engine
+          uri: lb://lb-search-engine
+          predicates:
+            - Path=/openapi/sir/**
+          filters:
+            - RewritePath=/openapi/sir/(?<remaining>.*), /${remaining}
