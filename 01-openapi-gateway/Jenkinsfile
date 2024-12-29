@@ -27,6 +27,7 @@ pipeline{
         stage('Docker build'){
             steps{
                 dir('01-openapi-gateway'){
+                    sh 'docker images'
                     sh 'docker build -t ${DOCKER_IMAGE} .'
                 }
             }
