@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8895999d-d4ed-4ad8-9e44-157d7c921d1c" name="Changes" comment="1. 修改lb-search-engine的jenkinsfile的docker启动命令，使用-P自动映射端口&#10;2. new project：openapi" />
+    <list default="true" id="8895999d-d4ed-4ad8-9e44-157d7c921d1c" name="Changes" comment="add lb-openapi's dockerfile &amp;&amp; Jenkinsfile">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-openapi-gateway/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/01-openapi-gateway/Jenkinsfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,7 +157,7 @@
       <option name="presentableId" value="Default" />
       <updated>1734984230622</updated>
       <workItem from="1734984231806" duration="12465000" />
-      <workItem from="1735119329673" duration="24737000" />
+      <workItem from="1735119329673" duration="25264000" />
     </task>
     <task id="LOCAL-00001" summary="initialize">
       <option name="closed" value="true" />
@@ -300,7 +303,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735459553812</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add lb-openapi's dockerfile &amp;&amp; Jenkinsfile">
+      <option name="closed" value="true" />
+      <created>1735459873668</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1735459873668</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +345,7 @@
     <MESSAGE value="lb-search-engine: dockerfile modified" />
     <MESSAGE value="修改qa环境nacos-server地址为docker0地址，从而让容器内服务可以访问宿主机ip" />
     <MESSAGE value="1. 修改lb-search-engine的jenkinsfile的docker启动命令，使用-P自动映射端口&#10;2. new project：openapi" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. 修改lb-search-engine的jenkinsfile的docker启动命令，使用-P自动映射端口&#10;2. new project：openapi" />
+    <MESSAGE value="add lb-openapi's dockerfile &amp;&amp; Jenkinsfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lb-openapi's dockerfile &amp;&amp; Jenkinsfile" />
   </component>
 </project>

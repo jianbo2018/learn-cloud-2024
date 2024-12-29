@@ -48,7 +48,7 @@ pipeline{
                         docker pull ${DOCKER_IMAGE} &&
                         docker stop lb-openapi || true &&
                         docker rm lb-openapi || true &&
-                        docker run -d --name lb-openapi -P ${DOCKER_IMAGE}
+                        docker run -d --name lb-openapi -p 10000:10000 ${DOCKER_IMAGE}
                     '
                     """
                 }
